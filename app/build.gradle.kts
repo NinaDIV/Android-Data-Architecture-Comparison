@@ -70,4 +70,13 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // Pruebas
+    testImplementation(libs.junit) // JUnit para pruebas unitarias
+    androidTestImplementation(libs.androidx.junit) // JUnit para pruebas de Android
+    androidTestImplementation(libs.androidx.espresso.core) // Espresso para pruebas de UI
+    androidTestImplementation(platform(libs.androidx.compose.bom)) // BOM para pruebas de Compose
+    androidTestImplementation(libs.androidx.ui.test.junit4) // Pruebas de UI de Compose
+    debugImplementation(libs.androidx.ui.tooling) // Herramientas de depuración de Compose
+    debugImplementation(libs.androidx.ui.test.manifest) // Manifest para pruebas de Compose
+
 }
